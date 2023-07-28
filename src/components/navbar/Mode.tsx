@@ -18,7 +18,6 @@ const Mode = ({ theme, setTheme }: Props) => {
 
   const handleThemeSwitch = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
-    console.log(theme)
   };
 
   return (

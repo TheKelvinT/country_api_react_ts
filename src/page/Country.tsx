@@ -21,10 +21,8 @@ const Country = () => {
         setLoading(true)
         const response = await fetch('https://restcountries.com/v3.1/all');
         const data = await response.json();
-        console.log(data); // Check the response data
         const countryById = data.find((country: CountryData) => country.name.common.toLowerCase() === id);
         setCountry(countryById || null);
-        console.log(countryById)
 
         const shuffledCountry = shuffleArray(data)
         setShuffledCountry(shuffledCountry)
@@ -58,11 +56,7 @@ const Country = () => {
         <Tooltip className='cursor-pointer' title={`${country?.name.common} is part of United Nations`} placement='bottom'>
           <img src={Emblem} alt="" className='h-12' />
         </Tooltip>
-      ) : (
-        <Tooltip className='cursor-pointer' title={`${country?.name.common} is not part of United Nations`} placement='bottom'>
-          <img src={DarkEmblem} alt="" className='h-12' />
-        </Tooltip>
-      )}
+      ) : ''}
     </div>
           <div className="grid grid-cols-2 gap-x-8 md:gap-x-24 gap-y-4 mb-4">
             <div>
