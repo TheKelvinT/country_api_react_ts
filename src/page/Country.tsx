@@ -4,7 +4,6 @@ import { CountryData } from '../types/CountryData';
 import SingleCard from '../components/SingleCard';
 import {Link} from 'react-router-dom'
 import Emblem from '../assets/un.svg'
-import DarkEmblem from '../assets/un-black.svg'
 import { shuffleArray } from '../utils/utils';
 import {Tooltip, Skeleton} from 'antd'
 import Loading from '../components/Loading';
