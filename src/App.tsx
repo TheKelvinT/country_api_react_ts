@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Countries from './page/Countries.tsx';
-import './App.css';
 import Navbar from './components/navbar/Navbar';
 import { useState, useEffect } from 'react';
 import Country from './page/Country.tsx';
